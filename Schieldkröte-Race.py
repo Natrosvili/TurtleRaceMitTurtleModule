@@ -27,8 +27,10 @@ while is_race_on:
             winning_color = turtle.pencolor()
             if winning_color == user_bet:
                 print(f"Du hast gewonnen ! die {winning_color} Schildkröte ist der Gewinner!")
+                break
             else:
                 print(f"Du hast verloren! die {winning_color} Schildkröte ist der Gewinner!")
+                break
 
         rand_distance = random.randint(0, 10)
         turtle.forward((rand_distance))
