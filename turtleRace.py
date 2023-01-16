@@ -4,7 +4,7 @@ import random
 is_race_on = False
 screen = Screen()
 screen.setup(width=500, height=400)
-user_bet = screen.textinput(title="machen Sie ihre Wette", prompt="Welche Schildkröte wird gewonnen?\n Geben Sie Ihre Farbe ein:")
+user_bet = screen.textinput(title="make your bet", prompt="Which turtle will win?\n Enter your color:")
 colors=["red", "orange", "yellow", "green", "blue", "purple"]
 y_positions = [-70, -40, -10, 20, 50, 80]
 all_turtles = []
@@ -25,10 +25,10 @@ while is_race_on:
             is_race_on=False
             winning_color = turtle.pencolor()
             if winning_color == user_bet:
-                print(f"Du hast gewonnen ! die {winning_color} Schildkröte ist der Gewinner!")
+                print(f"You won! The {winning_color} turtle is the winner.")
                 break
             else:
-                print(f"Du hast verloren! die {winning_color} Schildkröte ist der Gewinner!")
+                print(f"You lost! The {winning_color} turtle is the winner.")
                 break
 
         rand_distance = random.randint(0, 10)
