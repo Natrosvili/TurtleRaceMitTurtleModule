@@ -2,7 +2,6 @@ from turtle import Turtle, Screen
 
 player1 = Turtle()
 
-# position
 player1.shape("classic")
 player1.speed(8)
 player1.penup()
@@ -11,7 +10,6 @@ player1.forward(190)
 player1.left(90)
 player1.pendown()
 
-# make the logo (outside view)
 player1.begin_fill()
 player1.pencolor("red")
 player1.left(30)
@@ -27,7 +25,6 @@ player1.forward(280)
 player1.fillcolor("red")
 player1.end_fill()
 
-# make the A inside the logo
 player1.color("black")
 player1.pencolor("white")
 player1.penup()
@@ -50,7 +47,6 @@ player1.forward(98)
 player1.fillcolor("white")
 player1.end_fill()
 
-# the triangle inside the A
 player1.color("black")
 player1.penup()
 player1.left(184)
